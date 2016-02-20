@@ -45,5 +45,8 @@ group :development do
   gem 'spring'
 end
 
+# Normalize CSS
+gem 'normalize-rails'
+
 # Coverage
 gem 'codacy-coverage', :require => false
