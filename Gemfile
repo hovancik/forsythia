@@ -37,6 +37,8 @@ group :development, :test do
   gem 'byebug'
   # Coverage
   gem 'codacy-coverage', :require => false
+  # Rails env variables
+  gem 'dotenv-rails', '~> 2.1'
 end
 
 group :development do
