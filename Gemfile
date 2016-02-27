@@ -39,6 +39,8 @@ group :development, :test do
   gem 'codacy-coverage', :require => false
   # Rails env variables
   gem 'dotenv-rails', '~> 2.1'
+  # Mocking
+  gem 'mocha', '~> 1.1'
 end
 
 group :development do
