@@ -7,7 +7,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       redirect_to root_path
-      flash[:success] = "Welcome to forsythia! You may sign in now."
+      flash[:success] = "Welcome to forsythia! You may login now."
     else
       render 'new'
     end

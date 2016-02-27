@@ -1,6 +1,6 @@
 <% provide(:title, 'Sign up') %>
-
-<%= form_for(@user) do |f| %>
+<div class="form">
+  <%= form_for(@user) do |f| %>
 
   <%= f.label :name %>
   <%= f.text_field :name %>
@@ -17,4 +17,5 @@
   <%= f.submit "Sign up", class: "button" %>
 
   <%= render 'shared/error_messages', object: f.object %>
-<% end %>
+  <% end %>
+</div>
