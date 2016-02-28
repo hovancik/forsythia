@@ -11,3 +11,13 @@
 /log/*
 !/log/.keep
 /tmp
+
+# codacy test coverage
+/coverage/*
+
+# ENV vars
+.env
+.env.test
+
+# Byebug log
+.byebug_history

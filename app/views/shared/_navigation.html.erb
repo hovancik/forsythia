@@ -1,0 +1,11 @@
+<nav>
+  <ul>
+    <% if current_user %>
+      <li><%= current_user.name %></li>
+      <li><%= link_to "logout", "/logout",  method: :delete, class: "text-strong" %></li>
+    <% else %>
+      <li><%= link_to "sign up", "/signup" %></li>
+      <li><%= link_to "login", login_path, class: "text-strong" %></li>
+    <% end %>
+  </ul>
+</nav>
