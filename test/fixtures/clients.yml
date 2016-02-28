@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+company_one:
+  name: Company 1
+  rate: 10.0
+  user: john
+
+company_two:
+  name: COmpany 2
+  rate: 5
+  user: john
