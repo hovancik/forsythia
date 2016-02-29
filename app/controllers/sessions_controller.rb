@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
     if user
       session[:user_id] = user.id
       redirect_to root_path
-      flash[:success] = "Welcome to forsythia!"
+      flash[:success] = "Welcome to forsythia! Ready to #{view_context.link_to('work', '/start', class: 'text-strong')}?"
     else
       redirect_to '/login'
       flash[:error] = "Sorry, but your email or password were wrong."
