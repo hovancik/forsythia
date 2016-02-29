@@ -1,0 +1,14 @@
+<% provide(:title, 'All trackings') %>
+<div class="container">
+  <div class="period">
+    <%= @trackings.keys.first.strftime("%B %Y") %>
+  </div>
+  <% @trackings.each do |key, values| %>
+    <p>
+      <strong><i> <%= formatted_day(key) %>. </i></strong>
+      <% values.each do |tracking| %>
+        <%= render "shared/tracking", tracking: tracking %>
+      <% end %>
+    </p>
+  <% end %>
+</div>

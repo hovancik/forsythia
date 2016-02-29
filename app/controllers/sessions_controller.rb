@@ -9,7 +9,7 @@ class SessionsController < ApplicationController
       redirect_to root_path
       flash[:success] = <<-eos
         Welcome to forsythia! Ready to
-        #{view_context.link_to('work', '/start', class: 'text-strong')}?"
+        #{view_context.link_to('work', '/start', class: 'text-strong')}?
       eos
     else
       redirect_to '/login'

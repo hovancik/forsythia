@@ -1,3 +1,19 @@
 // Place all the styles related to the trackings controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.container {
+  margin: 1rem auto;
+  max-width: 80%;
+  padding-top: 4rem;
+  width: 780px;
+
+  .period {
+    font-size: 1.6rem;
+    padding-bottom: 2rem;
+    text-align: right;
+  }
+}
+
+.tracking {
+  padding-left: 2rem;
+}

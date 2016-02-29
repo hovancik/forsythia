@@ -10,4 +10,6 @@ Rails.application.routes.draw do
   # trackings
   get "start" => "trackings#new", as: :trackings
   post "start" => "trackings#create"
+  get "trackings" => "trackings#index"
+  post "end/:id" => "trackings#end", as: :end
 end

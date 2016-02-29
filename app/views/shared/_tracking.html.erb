@@ -1,0 +1,10 @@
+  <div class="tracking">
+      <p>
+        <%= formatted_time(tracking.started_at) %>
+        -
+        <%= formatted_time(tracking.ended_at) %>
+        <strong>
+          <%= link_to('end', end_path(tracking), method: :post) unless tracking.ended_at.present? %>
+        </strong>
+      </p>
+  </div>
