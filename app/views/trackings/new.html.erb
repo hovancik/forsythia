@@ -1,0 +1,15 @@
+<% provide(:title, 'Start new tracking') %>
+<div class="form">
+  <%= form_for(@tracking) do |f| %>
+    <%= f.label :client %>
+    <div class="select">
+      <%= f.collection_select(:client_id, @clients, :id, :name, :prompt => 'Select') %>
+    </div>
+    <%= f.label :started_at %>
+    <div class="select">
+      <%= f.datetime_select :started_at %>
+    </div>
+    <%= f.submit "start", class: "button" %>
+    <%= render 'shared/error_messages', object: f.object %>
+  <% end %>
+</div>
