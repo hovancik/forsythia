@@ -53,3 +53,6 @@ end
 
 # Normalize CSS
 gem 'normalize-rails'
+
+# Puma
+gem 'puma'
