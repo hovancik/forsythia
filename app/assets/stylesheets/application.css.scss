@@ -34,16 +34,15 @@ nav {
 
     li {
       display: inline-block;
-      padding-left: 0;
+      padding: 0 .5rem 0 0;
     }
   }
+}
 
-  a {
-    color: $navigation-text-color;
-    line-height: 1.95rem;
-    padding: 0 .5rem 0 0;
-    text-decoration: none;
-  }
+a {
+  color: $navigation-text-color;
+  line-height: 1.95rem;
+  text-decoration: none;
 }
 
 .error_explanation {

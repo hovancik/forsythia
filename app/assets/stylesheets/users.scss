@@ -4,18 +4,21 @@
 
 .form {
   margin: 2rem auto;
-  max-width: 200px;
+  max-width: 400px;
   padding: 10% 0 0;
 
   label {
+    clear: both;
     display: block;
     text-align: right;
   }
 
-  input {
+  input,
+  .select {
     clear: both;
     display: block;
     float: right;
     margin: 0 0 1rem;
+    text-align: right;
   }
 }
